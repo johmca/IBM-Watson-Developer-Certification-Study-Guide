@@ -1,4 +1,4 @@
-# IBM Watson Developer Certification Study Guide
+# IBM Watson Developer Certification Study Guide.
 
 A one page study guide for the below Watson Certification exam:
 
@@ -69,7 +69,7 @@ The Watson services are constantly evolving so always reference back to the [Wat
 ## Section 1 - Fundamentals of Cognitive Computing
 ### 1.1. Define the main characteristics of a cognitive system.
 
-- Cognitive systems understand, reason and learn 
+ - Cognitive systems understand, reason and learn 
  - Must understand structured and unstructured data 
  - Must reason by prioritizing recommendations and ability to form hypothesis 
  - Learns iteratively by repeated training as it build smarter patterns 
