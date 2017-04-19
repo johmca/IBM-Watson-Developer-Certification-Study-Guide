@@ -1,36 +1,30 @@
 IBM Watson Developer Certification Study Guide
 ==============================================
 
-A one page study guide for the below Watson Certification exam:
-
-[Exam Test C7020-230 - IBM Watson V3 Application
-Development](http://ibm.co/2liIJG1)
-
- 
+A one page study guide for the Watson Certification exam: [C7020-230 - IBM
+Watson V3 Application Development](http://ibm.co/2liIJG1)
 
 The certification exam covers all of the aspects of building an application that
 uses Watson services. This includes a basic understanding of cognitive
-technologies, as well as a practical knowledge of the core APIs. Get up to speed
-with these resources: - [Cognitive Computing Primer](http://ibm.co/2k5PAxf) -
-[Watson Developer Cloud API Documentation](http://ibm.co/2mU4Bnp)
+technologies, as well as a practical knowledge of the core APIs.
 
- 
+Get up to speed with these resources:
 
-The aim of this doc is to provide a more consolidated view of the required
-reading and study that is outlined in the [IBM Watson Professional Certification
-Program Study Guide Series](http://ibm.co/2iYtyP9).
+\- [Cognitive Computing Primer](http://ibm.co/2k5PAxf)
+
+\- [Watson Developer Cloud API Documentation](http://ibm.co/2mU4Bnp)
+
+The aim of this doc is to provide a consolidated view of the required reading
+and study that is outlined in the [IBM Watson Professional Certification Program
+Study Guide Series](http://ibm.co/2iYtyP9).
 
  
 
 The Watson services are constantly evolving so always reference back to the
 [Watson Documentation](http://ibm.co/2mU4Bnp). Please also feel free to
-contribute or provide feedback if you see anything that is incorrect.
-
- 
-
-[Watson is accessed through IBM Bluemix](http://ibm.co/2jdqk8s) \#\#\# [Check
-out and play with Watson services on Bluemix](http://bit.ly/2jtpOUB)
-<http://bit.ly/2jtpOUB>
+contribute or provide feedback if you see anything that is incorrect. [Watson is
+accessed through IBM Bluemix](http://ibm.co/2jdqk8s) \#\#\# [Check out and play
+with Watson services on Bluemix](http://bit.ly/2jtpOUB http://bit.ly/2jtpOUB)
 
  
 
@@ -190,7 +184,7 @@ Section 1 - Fundamentals of Cognitive Computing
 
 -   **Cognitive systems are here to augment human knowledge not replace it**
 
--   **Cognitive systems use natural language processing **to interact naturally
+-   **Cognitive systems use natural language processing** to interact naturally
     with humans
 
 -   **Cognitive systems employ machine learning technologies**
@@ -209,7 +203,7 @@ Section 1 - Fundamentals of Cognitive Computing
             these results. Neural Networks are examples of supervised machine
             learning.
 
-            -   **Classification problem **- aim to classify data into discrete
+            -   **Classification problem** - aim to classify data into discrete
                 classes based on input e.g. given list of symptoms what diseases
                 could the patient have
 
@@ -217,7 +211,7 @@ Section 1 - Fundamentals of Cognitive Computing
                 continuous range based on inputs e.g. predict an exam result
                 given previous results
 
-        -   **Unsupervised learning **is a form of machine learning that uses
+        -   **Unsupervised learning** is a form of machine learning that uses
             statistical techniques to cluster input information into different
             groupings and does not rely on training with known data-sets.
             Unsupervised learning is searching for relationships and
@@ -296,7 +290,7 @@ be acceptable.
     inputs are none there's going to be activation in the neuron.
 
 -   It then applies a function such as the **sigmoid function** or **hyperbolic
-    tangent **to generate an output which is passed to the next layer of neurons
+    tangent** to generate an output which is passed to the next layer of neurons
     via the synapses.
 
 -   Training using back-propogation iteratively adjusts the weights to reduce
@@ -328,7 +322,7 @@ each layer, number of connections between neurons.
 
 **Radial Basis Function** - heavy duty stuff - I don’t really understand
 
-**Recurrent Neural Networks **- this is the type we are most familiar with.
+**Recurrent Neural Networks** - this is the type we are most familiar with.
 Back-propogation is often used here to reduce error by adjustment of synapse and
 neuron weightings across the model working from output layer back to the input
 layer.
@@ -336,7 +330,7 @@ layer.
 **Modular Neural Networks** - again mimicking biology - we connect the output
 from one NN to the input of another to form networks of NN’s
 
-**Physical Neural Networks **- these use physical components with variable
+**Physical Neural Networks** - these use physical components with variable
 properties such as electrical resistance
 
  
@@ -409,7 +403,7 @@ error in the network's output:
 
 This algorithm calculates the gradient of the line (dE/dW) at a given point. A
 positive gradient indicates an increasing error. A negative gradient indicates a
-decreasing error. We can move along the line in whichever direction  exhibits a
+decreasing error. We can move along the line in whichever direction exhibits a
 negative gradient until the gradient reaches zero. This is the point with the
 minimum error. And we can use the weight at this point. This calculation is
 performed across multiple dimensions to give an array of optimized weights that
@@ -503,7 +497,7 @@ can both understand and teach complex expertise. This reduces the time required
 for a professional to become an expert. In addition, because these systems are
 taught by leading practitioners —whether in customer service, oncology
 diagnosis, case law or any other field —t**hey make available to broad
-populations the know-how of the best** **experts in the field.**
+populations the know-how of the best experts in the field.**
 
  
 
@@ -569,11 +563,77 @@ work together in support of cognitive solutions.
 
 Some useful links
 
--   [A Tour of Machine Learning
-    Algorithms](http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
+ 
+
+-   [A Tour of Machine Learning Algorithms  ]
+
+    http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
+
+     
+
+    Loads of ML Algorithms so perhaps useful to categorize by
+
+    -   **Classification by Learning style**
+
+        -   **Supervised Learning**
+
+            -   The model is fine tuned by a human using a well understood
+                training dataset to minimize the output errors (often referred
+                to as training)
+
+            -   Classification and Regression type problems
+
+            -   Examples of supervised learning algos are Back Propogation and
+                Logistic Regression
+
+        -   **Unsupervised**
+
+            -   We don’t have a well understood data set with known results and
+                we need to find relationships in the data using statistical
+                models
+
+            -   Example problems are clustering, dimensionality reduction and
+                association rule learning
+
+            -   Example algorithms include: the Apriori algorithm and k-Means.
+
+        -   **Semi-supervised**
+
+            -   Small amount of labelled input data
+
+            -   Do a bit of supervised learning and augment with unsupervised
+                approaches
+
+            -   Example problems are classification and regression.
+
+    -   **Classification by How they work **is more complex but two examples are
+
+        -   Neural Networks, as we know, mimic biological systems
+
+        -   Regression algorithms model relations between variables to minimize
+            error
+
+        -   Instance Based Algorithms compare new data to a well understood data
+            set and make predictions based on similarity
+
+![](MachineLearningAlgorithms.png)
+
+ 
 
 -   [List of machine learning
     concepts](https://en.wikipedia.org/wiki/List_of_machine_learning_concepts)
+
+ 
+
+https://en.wikipedia.org/wiki/Outline_of_machine_learning
+
+ 
+
+Too much info here to be useful. Interesting to note IBM not listed as providing
+ML tools or frameworks. Perhaps this is symptomatic of IBM pitching Watson as
+Cognitive rather than ML?
+
+ 
 
 -   [Supervised learning, unsupervised learning and reinforcement learning:
     Workflow
@@ -584,7 +644,7 @@ Some useful links
 ###### 1.3.2.1. Supervised learning:
 
 We are given a data set and already know what our correct output should look
-like, having the idea of the  relationship between the input and output e.g.
+like, having the idea of the relationship between the input and output e.g.
 study hours drives exam success. We iteratively train the system using a sample
 of our data till our results are satisfactory then we test using some data we
 held back. If all is well the system should be able to process new input data
@@ -612,8 +672,8 @@ problem
 ##### 1.3.2.1.3.Semi-supervised learning
 
 -   Semi-supervised learning are tasks and techniques that also make use of
-    unlabeled data for training – typically a small amount of labeled data with
-    a large amount of unlabeled data.
+    unlabeled data for training – typically a small amount of data with labelled
+    responses combined with a large amount of unlabeled data.
 
 ##### 1.3.2.2. Unsupervised learning:
 
@@ -642,13 +702,13 @@ problem
     a hierarchy of clusters. Strategies for hierarchical clustering generally
     fall into two types:
 
--   Agglomerative: This is a "bottom up" approach: each observation starts in
-    its own cluster, and pairs of clusters are merged as one moves up the
-    hierarchy.
+    -   Agglomerative: This is a "bottom up" approach: each observation starts
+        in its own cluster, and pairs of clusters are merged as one moves up the
+        hierarchy.
 
--   Divisive: This is a "top down" approach: all observations start in one
-    cluster, and splits are performed recursively as one moves down the
-    hierarchy.
+    -   Divisive: This is a "top down" approach: all observations start in one
+        cluster, and splits are performed recursively as one moves down the
+        hierarchy.
 
 ##### 1.3.2.2.4.Cluster analysis
 
@@ -668,40 +728,113 @@ problem
 
 ##### 1.3.2.3. Reinforcement learning
 
--   These algorithms choose an action, based on each data point and later learn
-    how good the decision was. Over time, the algorithm changes its strategy to
-    learn better and achieve the best reward. Thus, reinforcement learning is
-    particularly well-suited to problems which include a long-term versus
-    short-term reward trade-off.
+-   Inspired by behavioral psychology. These algorithms choose an action and
+    later learn how good the decision was. Over time, the algorithm changes its
+    strategy to learn better and achieve the best reward. Thus, reinforcement
+    learning is particularly well-suited to problems which include a long-term
+    versus short-term reward trade-off. Not same as classic supervised learning
+    as algorithm never told the “correct” result.
 
- 
+    https://en.wikipedia.org/wiki/Reinforcement_learning
+
+     
+
+    Google seems to be pursuing this with Deep Mind, a system that is rewarded
+    by another system to create an unsupervised learning AI.
+
+    http://www.dailymail.co.uk/sciencetech/article-4420804/Experiment-lead-machine-s-learning-without-humans.html
+
+     
 
 ### 1.4. Define a common set of use cases for cognitive systems.
 
-Customer Call Centers - Agent Assist: Q&A - Problem Solved: Provides a natural
-language help system so call agents can rapidly retrieve answers to customer
-questions - Services used: Conversation, natural language answer retrieval,
-keyword extraction, and entity extraction - Automation: Customer/Technical
-Support Tickets Routing - Customer: Go Moment  
-- Problems Solved: - a) Detect the topic of a ticket and route to the
-appropriate department to handle it - b) room service, maintenance, housekeeping
-- c) Escalate support tickets based on customersentiment - d) Route support
-requests to agents that already solved similar problems by detecting natural
-language similarities between new customer tickets and resolved ones. - Services
-used: natural language (text) classification, keyword extraction, entity
-extraction, and sentiment/tone analysis
+\- **Customer Call Centers**
 
-Physicians - Expert Advisor: - Example: Watson Discovery Advisor - Problem
-Solved: Provides relevant medical suggestions and insights in natural language
-so physicians can more accurately diagnose patients. - Services used:
-Conversation + natural language answer retrieval, entity extraction
+- Agent Assist Q&A System
+
+\- Problems Solved: Provide a natural language help system so human call agents
+can rapidly retrieve answers to customer questions
+
+\- Services used:
+
+\- Conversation
+
+\- Natural Language Understanding
+
+\- Retrieve & Rank
+
+\- Automation of Customer/Technical Support Ticket Routing
+
+\- Problems Solved:
+
+a) Detect the topic of a ticket and route to the appropriate department to
+handle it
+
+b) Escalate support tickets based on customer sentiment
+
+c) Route support requests to agents that already solved similar problems by
+detecting natural language similarities between new customer tickets and
+resolved ones.
+
+\- Services used could include:
+
+\- Natural Language Classifier to identify class of problem/ question using
+bespoke classifier developed in WKS
+
+\- Tone analyser to extract sentiment expressed in support ticket
+
+\-Natural Language Understanding could pull out entities and keywords and app
+could use these to lookup agents with recent experience in these areas from
+database
+
+ 
+
+**- Physicians Expert Adviser: **
+
+\- Example: Watson Discovery Advisor
+
+\- Problem Solved: Provides relevant medical suggestions and insights in natural
+language so physicians can   more accurately diagnose patients.
+
+\- Services used:
+
+\-Conversation can be used to provide natural language interface to the Dr
+
+\- Natural Language Understanding can pul out entities, keywords based on domain
+specific classifier built in WKS
+
+\-Retrieve and Rank can search for and present most relevant documents based on
+output from NLU
+
+ 
 
 Social Media - Data Insights: - Partner: Ground Signal - Problem Solved: Extract
 useful insights from social media such as Instagram and Twitter by determining
 the content of photos and topics/sentiment of user posts. - Services used:
 keyword, entity, and sentiment/tone analysis
 
+ 
+
 ### 1.5. Define Precision, Recall, and Accuracy.
+
+Use the cancer example to remember how this works.
+
+ 
+
+Some patients have cancer and are diagnosed with cancer (True Positives)
+
+Some patients have cancer and are not diagnosed with cancer (False Negatives)
+
+Some patients do not have cancer and are diagnosed with cancer (False Positives)
+
+Some patients do not have cancer and are not diagnosed with cancer (True
+Negatives)
+
+ 
+
+![](main-qimg-baaa9f9461ceb869b63f3ebeb6b15afa.png)
+
+ 
 
 #### 1.5.1. [Precision:](#https://en.wikipedia.org/wiki/Precision_and_recall)
 
@@ -710,12 +843,18 @@ keyword, entity, and sentiment/tone analysis
 
 -   Formula: True Positives/(True Positives + False Positives)
 
+-   This is the proportion of patients diagnosed with cancer that really do have
+    cancer. Its a measure of how accurate we are.
+
 #### 1.5.2. [Recall:](#https://en.wikipedia.org/wiki/Precision_and_recall)
 
 -   Recall is the percent of documents labelled as positive were successfully
     retrieved.
 
 -   Formula: True Positives/(True Positives + False Negatives)
+
+-   This is the proportion of patients that really do have cancer which we
+    diagnose. Its a measure of our effectiveness.
 
 #### 1.5.3. Accuracy:
 
@@ -724,33 +863,51 @@ keyword, entity, and sentiment/tone analysis
 
 -   Formula: (True Positives + True Negatives)/Total Document Count
 
+-   This is the proportion of the total patients we correctly diagnosed.
+
 #### 1.5.4. Diagrams like this are often useful in capturing the True/False
 
 Positive/Negatives described above:
 [https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall](#https://www.quora.com/What-is-the-best-way-to-understand-the-terms-precision-and-recall)
 
+ 
+
 ### 1.6. Explain the importance of separating training, validation and test data.
 
-Normally to perform supervised learning you need two types of data sets: 1. In
-one dataset (your "gold standard") you have the input data together with
-correct/expected output, This dataset is usually duly prepared either by humans
-or by collecting some data in semi-automated way. But it is important that you
-have the expected output for every data row here, because you need for
-supervised learning. 2. The data you are going to apply your model to. In many
-cases this is the data where you are interested for the output of your model and
-thus you don't have any "expected" output here yet.
+Normally to perform supervised learning you need at least two types of data
+sets:
 
-While performing machine learning you do the following: 1. Training phase: you
-present your data from your "gold standard" and train your model, by pairing the
-input with expected output. 2. Validation/Test phase: in order to estimate how
-well your model has been trained (that is dependent upon the size of your data,
-the value you would like to predict, input etc) and to estimate model properties
-(mean error for numeric predictors, classification errors for classifiers,
-recall and precision for IR-models etc.) 3. Application phase: now you apply
-your freshly-developed model to the real-world data and get the results. Since
-you normally don't have any reference value in this type of data (otherwise, why
-would you need your model?), you can only speculate about the quality of your
-model output using the results of your validation phase.
+1. In one dataset (your "gold standard") you have the input data together with
+correct/expected output. This dataset is usually prepared either by humans or by
+collecting some data in semi-automated way (with WKS we can pre-annotate
+documents using Watson services trained on generic domains to bootstrap our
+annotation efforts). It is important that you have the expected output for every
+data row.
+
+2. The data you are going to apply your model to. In many cases this is the data
+where you are interested for the output of your model and thus you don't have
+any "expected" output here yet.
+
+ 
+
+While performing machine learning you do the following:
+
+1. Training phase: you present your data from your "gold standard" and train
+your model, by pairing the input with expected output and minimising errors.
+
+2. Validation/Test phase: in order to estimate how well your model has been
+trained (that is dependent upon the size of your data, the value you would like
+to predict, input etc) and to estimate model properties (mean error for numeric
+predictors, classification errors for classifiers, recall and precision for
+IR-models etc.)
+
+3. Application phase: now you apply your freshly-developed model to the
+real-world data and get the results. Since you normally don't have any reference
+value in this type of data (otherwise, why would you need your model?), you can
+only speculate about the quality of your model output using the results of your
+validation phase.
+
+ 
 
 The validation phase is often split into two parts:
 
@@ -759,12 +916,19 @@ The validation phase is often split into two parts:
 
 2.  Then you estimate the accuracy of the selected approach (=test).
 
+ 
+
 Hence the separation to 50/25/25.
 
-In case if you don't need to choose an appropriate model from several rivaling
-approaches, you can just re-partition your set that you basically have only
-training set and test set, without performing the validation of your trained
-model. I personally partition them 70/30 then.
+ 
+
+Note - In the case where you don't need to choose an appropriate model from
+several rivaling approaches i.e. you don’t need to validate you could just
+re-partition your set that you basically have only a training dataset and a test
+dataset, without performing the validation of your trained model. I personally
+partition them 70/30 then.
+
+ 
 
 ### 1.7. Measure accuracy of service.
 
