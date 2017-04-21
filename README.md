@@ -24,7 +24,7 @@ The Watson services are constantly evolving so always reference back to the
 [Watson Documentation](http://ibm.co/2mU4Bnp). Please also feel free to
 contribute or provide feedback if you see anything that is incorrect. [Watson is
 accessed through IBM Bluemix](http://ibm.co/2jdqk8s) \#\#\# [Check out and play
-with Watson services on Bluemix](http://bit.ly/2jtpOUB http://bit.ly/2jtpOUB)
+with Watson services on Bluemix](http://bit.ly/2jtpOUB%20http://bit.ly/2jtpOUB)
 
  
 
@@ -565,7 +565,7 @@ Some useful links
 
  
 
--   [A Tour of Machine Learning Algorithms  ]
+-   [A Tour of Machine Learning Algorithms ]
 
     http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
 
@@ -606,15 +606,18 @@ Some useful links
 
             -   Example problems are classification and regression.
 
-    -   **Classification by How they work **is more complex but two examples are
+    -   **Classification by How they work** is more complex (see mind map) but
+        two examples are
 
-        -   Neural Networks, as we know, mimic biological systems
+        -   Neural Networks, which as we know, mimic biological systems
 
         -   Regression algorithms model relations between variables to minimize
             error
 
         -   Instance Based Algorithms compare new data to a well understood data
             set and make predictions based on similarity
+
+        -   and there are loads more...
 
 ![](MachineLearningAlgorithms.png)
 
@@ -750,58 +753,58 @@ problem
 
 \- **Customer Call Centers**
 
-- Agent Assist Q&A System
+-   Agent Assist Q&A System
 
-\- Problems Solved: Provide a natural language help system so human call agents
-can rapidly retrieve answers to customer questions
+    \- Problems Solved: Provide a natural language help system so human call
+    agents can rapidly retrieve answers to    customer questions
 
-\- Services used:
+    \- Services used:
 
-\- Conversation
+    \- Conversation
 
-\- Natural Language Understanding
+    \- Natural Language Understanding
 
-\- Retrieve & Rank
+    \- Retrieve & Rank
 
 \- Automation of Customer/Technical Support Ticket Routing
 
 \- Problems Solved:
 
-a) Detect the topic of a ticket and route to the appropriate department to
-handle it
+1.  Detect the topic of a ticket and route to the appropriate department to
+    handle it
 
-b) Escalate support tickets based on customer sentiment
+    1.  Escalate support tickets based on customer sentiment
 
-c) Route support requests to agents that already solved similar problems by
-detecting natural language similarities between new customer tickets and
-resolved ones.
+        1.  Route support requests to agents that already solved similar
+            problems by detecting natural language similarities between new
+            customer tickets and resolved ones.
 
-\- Services used could include:
+    \- Services used could include:
 
-\- Natural Language Classifier to identify class of problem/ question using
-bespoke classifier developed in WKS
+    \- Natural Language Classifier to identify class of problem/ question using
+    bespoke classifier developed in WKS
 
-\- Tone analyser to extract sentiment expressed in support ticket
+    \- Tone analyser to extract sentiment expressed in support ticket
 
-\-Natural Language Understanding could pull out entities and keywords and app
-could use these to lookup agents with recent experience in these areas from
-database
+    \-Natural Language Understanding could pull out entities and keywords and
+    app could use these to lookup agents with recent experience in these areas
+    from database
 
  
 
-**- Physicians Expert Adviser: **
+**- Physicians Expert Adviser:**
 
-\- Example: Watson Discovery Advisor
+\- Example: Watson Discovery Advisor is an example of this
 
 \- Problem Solved: Provides relevant medical suggestions and insights in natural
-language so physicians can   more accurately diagnose patients.
+language so physicians can more accurately diagnose patients.
 
 \- Services used:
 
-\-Conversation can be used to provide natural language interface to the Dr
+\-Conversation can be used to provide natural language interface to the Doctor
 
-\- Natural Language Understanding can pul out entities, keywords based on domain
-specific classifier built in WKS
+\- Natural Language Understanding can pull out entities, keywords based on
+domain specific classifier built in WKS
 
 \-Retrieve and Rank can search for and present most relevant documents based on
 output from NLU
@@ -817,7 +820,7 @@ keyword, entity, and sentiment/tone analysis
 
 ### 1.5. Define Precision, Recall, and Accuracy.
 
-Use the cancer example to remember how this works.
+Use the awful cancer example to remember how this works.
 
  
 
@@ -844,7 +847,9 @@ Negatives)
 -   Formula: True Positives/(True Positives + False Positives)
 
 -   This is the proportion of patients diagnosed with cancer that really do have
-    cancer. Its a measure of how accurate we are.
+    cancer. In Physics precision is the closeness of measurements to each other.
+    Precision here indicates the likelihood that a diagnosis of cancer is
+    correct.
 
 #### 1.5.2. [Recall:](#https://en.wikipedia.org/wiki/Precision_and_recall)
 
@@ -854,7 +859,7 @@ Negatives)
 -   Formula: True Positives/(True Positives + False Negatives)
 
 -   This is the proportion of patients that really do have cancer which we
-    diagnose. Its a measure of our effectiveness.
+    diagnose. Its a measure of our effectiveness at diagnosing.
 
 #### 1.5.3. Accuracy:
 
@@ -863,7 +868,17 @@ Negatives)
 
 -   Formula: (True Positives + True Negatives)/Total Document Count
 
--   This is the proportion of the total patients we correctly diagnosed.
+-   This is the proportion of the total patients we correctly diagnosed. It
+    indicates how close we are to reality. In Physics accuracy is how close we
+    get to the real answer in our experiment.
+
+ 
+
+In basketball an accurate player will manage to place the ball in the hoop. A
+precise player will always hit the same spot. We want to be both accurate and
+precise.
+
+ 
 
 #### 1.5.4. Diagrams like this are often useful in capturing the True/False
 
@@ -877,48 +892,49 @@ Positive/Negatives described above:
 Normally to perform supervised learning you need at least two types of data
 sets:
 
-1. In one dataset (your "gold standard") you have the input data together with
-correct/expected output. This dataset is usually prepared either by humans or by
-collecting some data in semi-automated way (with WKS we can pre-annotate
-documents using Watson services trained on generic domains to bootstrap our
-annotation efforts). It is important that you have the expected output for every
-data row.
+1.  In one dataset (your "gold standard") you have the input data together with
+    correct/expected output. This dataset is usually prepared either by humans
+    or by collecting some data in semi-automated way (with WKS we can
+    pre-annotate documents using Watson services trained on generic domains to
+    bootstrap our annotation efforts). It is important that you have the
+    expected output for every data row.
 
-2. The data you are going to apply your model to. In many cases this is the data
-where you are interested for the output of your model and thus you don't have
-any "expected" output here yet.
+2.  The data you are going to apply your model to. In many cases this is the
+    data where you are interested for the output of your model and thus you
+    don't have any "expected" output here yet.
 
  
 
 While performing machine learning you do the following:
 
-1. Training phase: you present your data from your "gold standard" and train
-your model, by pairing the input with expected output and minimising errors.
+1.  Training phase: you present your data from your "gold standard" and train
+    your model, by pairing the input with expected output and minimising errors.
 
-2. Validation/Test phase: in order to estimate how well your model has been
-trained (that is dependent upon the size of your data, the value you would like
-to predict, input etc) and to estimate model properties (mean error for numeric
-predictors, classification errors for classifiers, recall and precision for
-IR-models etc.)
+2.  Validation/Test phase: in order to estimate how well your model has been
+    trained (that is dependent upon the size of your data, the value you would
+    like to predict, input etc) and to estimate model properties (mean error for
+    numeric predictors, classification errors for classifiers, recall and
+    precision for IR-models etc.)
 
-3. Application phase: now you apply your freshly-developed model to the
-real-world data and get the results. Since you normally don't have any reference
-value in this type of data (otherwise, why would you need your model?), you can
-only speculate about the quality of your model output using the results of your
-validation phase.
+3.  Application phase: now you apply your freshly-developed model to the
+    real-world data and get the results. Since you normally don't have any
+    reference value in this type of data (otherwise, why would you need your
+    model?), you can only speculate about the quality of your model output using
+    the results of your validation phase.
 
  
 
 The validation phase is often split into two parts:
 
-1.  In the first part you just look at your models and select the best
+1.  In the first part you just look at your competing models and select the best
     performing approach using the validation data (=validation)
 
-2.  Then you estimate the accuracy of the selected approach (=test).
+2.  Then you estimate the accuracy of the selected approach (=test) using a
+    small (25%) subset of the the known dataset. Section 1.7 below.
 
  
 
-Hence the separation to 50/25/25.
+Hence the separation of data into datasets of  50/25/25 %.
 
  
 
@@ -943,6 +959,8 @@ A number of metrics are used in ML to measure the predictive accuracy of a
 model. The choice of accuracy metric depends on the ML task. It is important to
 review these metrics to decide if your model is performing well.
 
+ 
+
 ### 1.8. Perform Domain Adaption using Watson Knowledge Studio (WKS).
 
 There is a great YouTube video series for Watson Knowledge Studio here:
@@ -950,16 +968,17 @@ There is a great YouTube video series for Watson Knowledge Studio here:
 Video: <https://www.youtube.com/watch?v=XBwpU97D5aE?v=VID> [Teach Watson with
 Watson Knowledge Studio](https://www.youtube.com/watch?v=XBwpU97D5aE?v=VID)
 
+ 
+
 IBM Watson Knowledge Studio is a cloud-based application that enables developers
 and domain experts to collaborate on the creation of custom annotator components
 that can be used to identify mentions and relations in unstructured text. Watson
 Knowledge Studio is: - Intuitive: Use a guided experience to teach Watson
 nuances of natural language without writing a single line of code -
 Collaborative: SMEs work together to infuse domain knowledge in cognitive
-applications
-
-Use Watson™ Knowledge Studio to create a machine-learning model that understands
-the linguistic nuances, meaning, and relationships specific to your industry.
+applications. We can use Watson™ Knowledge Studio to create a machine-learning
+model that understands the linguistic nuances, meaning, and relationships
+specific to your industry.
 
 To become a subject matter expert in a given industry or domain, Watson must be
 trained. You can facilitate the task of training Watson with Watson Knowledge
@@ -977,44 +996,57 @@ The following diagram illustrates how it works. [
 ]
 
 1.  Based on a set of domain-specific source documents, the team creates a type
-    system that defines entity types and relation types for the information of
-    interest to the application that will use the model.
+    system that defines **entity types **and **relation types **for the
+    information of interest to the application that will use the model e.g. for
+    car accident reports manufacturers and models may be entities and
+    manufactures/ manufactured by could be a relation.
 
 2.  A group of two or more human annotators annotate a small set of source
     documents to label words that represent entity types, words that represent
-    relation types between entity mentions, and to identify coreferences of
+    relation types between entity mentions, and to identify co-references of
     entity types. Any inconsistencies in annotation are resolved, and one set of
     optimally annotated documents is built, which forms the ground truth.
 
-3.  The ground truth is used to train a model.
+3.  The ground truth (well understood dataset) is used to train a model.
 
-4.  The trained model is used to find entities, relations, and coreferences in
+4.  The trained model is used to find entities, relations, and co-references in
     new, never-seen-before documents.
 
-Deliver meaningful insights to users by deploying a trained model in other
-Watson cloud-based offerings and cognitive solutions.
+ 
 
-Watson services integration
+I**ntegrations of WKS with other Watson Services**
 
-Share domain artifacts and models between IBM Watson Knowledge Studio and other
-Watson services.
+We can then deliver meaningful insights to users by deploying the model trained
+for a particular domain via other Watson cloud-based offerings and cognitive
+solutions such as Watson NLU or Watson Explorer.
 
-Use Watson Knowledge Studio to perform the following tasks: - Bootstrap
-annotation by using the AlchemyLanguage entity extraction service to
-automatically find and annotate entities in your documents. When human
-annotators begin to annotate the documents, they can see the annotations that
-were already made by the service and can review and add to them. See
-Pre-annotating documents with IBM AlchemyLanguage for details. - Import
-industry-specific dictionaries that you downloaded from IBM® Bluemix® Analytics
-Exchange. - Import analyzed documents that are in UIMA CAS XMI format. For
-example, you can import UIMA CAS XMI files that were exported from IBM Watson
-Explorer content analytics collections or IBM Watson Explorer Content Analytics
-Studio. - Deploy a trained model to use with the AlchemyLanguage service. -
+ 
+
+We can also bootstrap annotation by using the AlchemyLanguage (Now NLU) entity
+extraction service (traine don general purpose new domain) to automatically find
+and annotate entities in your documents as a quick start to builging a custom
+classifier. When human annotators begin to annotate the documents, they can see
+the annotations that were already made by the service and can review and add to
+them. See Pre-annotating documents with IBM AlchemyLanguage for details.
+
+ 
+
+We could also import industry-specific dictionaries that you downloaded from
+IBM® Bluemix® Analytics Exchange.
+
+We can import analyzed documents that are in UIMA CAS XMI format. For example,
+you can import UIMA CAS XMI files that were exported from IBM Watson Explorer
+content analytics collections or IBM Watson Explorer Content Analytics Studio.
+
+Deploy a trained model to use with the AlchemyLanguage service (now NLU).
+
 Export a trained model to use in IBM Watson Explorer.
+
+ 
 
 ### 1.9. Define Intents and Classes.
 
--   The Natural Language Classifier service available via WDC, enables
+-   The **Natural Language Classifier **service available via WDC, enables
     clustering or classification based on some measure of inherent similarity or
     distance given the input data. Such clustering is known as intents or
     classes.
@@ -1022,17 +1054,25 @@ Export a trained model to use in IBM Watson Explorer.
 -   Where classes may include images, intent is a similar clustering for written
     utterances in unstructured natural language format.
 
+-   NLC is an example of unsupervised learning
+
+ 
+
 ### 1.10. Explain difference between ground truth and corpus.
 
 -   Ground truth is used in both supervised and unsupervised machine learning
-    approaches, yet portray different values and formats. For example, in a
-    typical supervised learning system, ground truth consisted of inputs
-    (questions) and approved outputs (answers). With the aide of logistical
-    regression and iterative training the system improves in accuracy.
+    approaches, yet portray different values and formats.
+
+-   For example, in a typical supervised learning system, ground truth consisted
+    of inputs (questions) and approved outputs (answers). With the aide of
+    logistical regression and iterative training using the ground truth the
+    system improves in accuracy and is validated and tested (remember 50/25/25)
 
 -   In unsupervised approach, such as NLC, the ground truth consists of a
     comma-separated csv or a JSON file that lists hundreds of sample utterances
     and a dozen or so intents (or classes) classifying those utterances.
+
+ 
 
 ### 1.11. Define the difference between the user question and the user intent.
 
@@ -1048,12 +1088,73 @@ the user intent from the underlying context. - Common examples of user intents:
 “I need to change my password.” - Imperative: “Show me the directions to my the
 nearest gas station.”
 
+ 
+
 Section 2 - Use Cases of Cognitive Services
 -------------------------------------------
 
+Watson services are constantly evolving e.g. AlchemyAPI is now defunct with its
+functionality provided via Watson NLU, NLC etc.
+
+ 
+
+Today (21 April 2014) the following Watson services are available in the Bluemix
+UK region
+
+ 
+
+![](WatsonServices.png)
+
+ 
+
+-   Conversation
+
+-   Discovery
+
+-   Document Conversion
+
+-   Language Translator
+
+-   Natural Language Classifier
+
+-   Natural Language Understanding
+
+-   Personality Insights
+
+-   Retrieve and Rank
+
+-   Speech to Text
+
+-   Text to Speech
+
+-   Tone Analyser
+
+-   Tradeoff Analytics (deprecated)
+
+-   Visual Recognition
+
+ 
+
+Note - Alchemy Language is defunct but is still within scope for the exam rather
+than NLU
+
+ 
+
+Alchemy consisted of:
+
+Alchemy Language
+
+Alchemy Data News
+
+ 
+
 ### 2.1. Select appropriate combination of cognitive technologies based on use-case and data format.
 
-#### 2.1.1. Agent-assist for email-based customer call center
+ 
+
+ 
+
+#### 2.1.1. Use case = Agent-assist for email-based customer call center
 
 -   Data: customer emails
 
@@ -1095,31 +1196,188 @@ Section 2 - Use Cases of Cognitive Services
 
 -   Watson-specific: NLC and Alchemy Language
 
+ 
+
 ### 2.2. Explain the uses of the Watson services in the Application Starter Kits.
 
-### 2.3. Describe the Watson Conversational Agent.
+[You can view the list of Watson Starter Kits here] on the Watson Developer
+Cloud
+
+https://www.ibm.com/watson/developercloud/starter-kits.html
+
+ 
+
+The starter kits provide a functioning example app for specific use cases which
+can be used as a starting point by developers for their own cognitive apps.
+Source code is provided on GitHub Watson Developer Cloud repository.
+
+ 
+
+https://github.com/watson-developer-cloud
+
+###  
+
+-   **Answer Retrieval**
+
+    -   Find and surface the most relevant responses to natural language queries
+        from large unstructured data sets.  This sample application provides a
+        generic approach to ingest documents & train a ranker using Retrieve &
+        Rank. Additionally the starter kit shows developers how to improve the
+        results of the machine learning algorithm through feature engineering.
+
+    -   Services used - Retrieve and Rank
+
+-   **News Intelligence**
+
+    -   This sample application demonstrates how to query news content to
+        understand what people are saying or feeling about important topics
+
+    -   Services used - Discovery
+
+-   **Social Customer Care**
+
+    -   This sample application demonstrates how to gather personality and brand
+        intelligence from tweets and responds with an appropriate next best
+        action.
+
+    -   Services Used - NLC, Tone Analyser, Personality Insights
+
+-   **Text Message Chatbot**
+
+    -   A "chat" application that forecasts the weather.
+
+    -   Services used - Conversation, Alchemy Language (deprecated)
+
+-   **Voice of the Customer**
+
+    -   This starter kit provides an approach to implementing an application
+        that uses the Discovery service to gain valuable insights from customer
+        opinions. The source data for the application is Amazon reviews.
+
+    -   Services used - Discovery
+
+-   **Knowledgebase Search**
+
+    -   This sample application provides a generic approach for how to improve
+        the results of the Discovery Service's search by ingesting and enriching
+        documents with natural language processing and querying with these
+        enrichments.
+
+    -   Services Used - Discovery
+
+ 
+
+There are also Gallery apps showcasing capability that also have source
+available on Git Hub.
+
+-   Sentiment and Emotion
+
+    -   Uses text analytics to detect sentiment and emotions from people's
+        digital footprints.
+
+    -   Services Used - Alchemy Language
+
+-   Election Insights
+
+    -   Performs natural language processing on 75,000+ news sources as they are
+        published and uses Alchemy's taxonomy breakdown to focus on all things
+        election.
+
+    -   Services Used - Alchemy Data News
+
+-   Investment Advisor
+
+    -   Combines IBM Watson Personality Insights and IBM Watson Tradeoff
+        Analytics services to recommend suitable funds and agents for clients.
+
+    -   Services Used - Personality Insights, Tradeoff Analytics
+
+-   Speech to Speech
+
+    -   Attempting to break language barriers, this app uses three Watson
+        services to translate your speech instantly and speak the translation
+        aloud in a foreign language.
+
+    -   Services Used - Speech to Text, Language Translator, Text to Speech
+
+-   News Explorer
+
+    -   Automatically construct a news information network and present large
+        volumes of news results in an understandable fashion.
+
+    -   Services Used - Alchemy Data News
+
+-   Watson Rover
+
+    -   A Rover that autonomously navigates a maze by interpreting multi-lingual
+        instructions and recognising visual cues
+
+    -   Services used - Visual Recognition, Speech to Text, Language Translator
+
+-   Designer Match
+
+    -   Helps you find accessories by matching designer personalities
+
+    -   Services Used - Personality Insights
+
+-   NYC School Finder
+
+    -   Find the best NYC school for your child.
+
+    -   Services Used - Personality Insights, Tradeoff Analytics
+
+-   Nests
+
+    -   Find the best home to live in the US
+
+    -   Services Used - Tradeoff Analytics
+
+-   SF Life
+
+    -   Find the best area to live in San Francisco based on lifestyle
+        preferences.
+
+    -   Services Used - Tradeoff Analytics
+
+-   Your Celebrity Match
+
+    -   Enter your Twitter handle to see which celebrities' personalities are
+        most similar to yours!
+
+    -   Services Used - Personality Insights
+
+ 
+
+### 2.3. Describe Watson Services.
 
 For section 2.2 and 2.3, we deep dive into the Watson services currently
 available and stated in the study guide. By understanding the services
 individually, it will help with knowing what services would work for different
 scenarios.
 
-[You can view the list of Watson Starter Kits
-here](https://www.ibm.com/watson/developercloud/starter-kits.html)
+ 
 
-### [Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html)
+### **Natural Language Classifier**
 
-The IBM Watson™ Natural Language Classifier service uses machine learning
-algorithms to return the top matching predefined classes for short text inputs.
-The service interprets the intent behind text and returns a corresponding
-classification with associated confidence levels. The return value can then be
-used to trigger a corresponding action, such as redirecting the request or
-answering a question.
+### <https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html>
+
+ 
+
+The Natural Language Classifier service applies cognitive computing techniques
+to return the best matching classes for a sentence or phrase. For example, you
+submit a question and the service returns keys to the best matching answers or
+next actions for your application. Your application can then take an action
+based on this responseand your use case. You create a classifier instance by
+providing a set of representative strings and a set of one or more correct
+classes for each training. After training, the new classifier can accept new
+questions or phrases that it has not previously encountered and return the top
+matches with a probability value for each match
 
 ##### Intended Use
 
-The Natural Language Classifier is tuned and tailored to short text (1000
-characters or less) and can be trained to function in any domain or application.
+The Natural Language Classifier is tuned and tailored to short text (**1000
+characters or less)** and can be trained to function in any domain or
+application. For example;
 
 -   Tackle common questions from your users that are typically handled by a live
     agent.
@@ -1128,24 +1386,96 @@ characters or less) and can be trained to function in any domain or application.
 
 -   Classify tweets into a set of classes, such as events, news, or opinions.
 
--   Based on the response from the service, an application can control the
-    outcome to the user. For example, you can start another application, respond
-    with an answer, begin a dialog, or any number of other possible outcomes.
+ 
+
+Based on the response from the service, an application can control the outcome
+to the user. For example, you can start another application, respond with an
+answer, begin a dialog, or any number of other possible outcomes.
 
 Here are some other examples of how you might apply the Natural Language
-Classifier: - Twitter, SMS, and other text messages - Classify tweets into a set
-of classes, such as events, news, or opinions. - Analyze text messages into
-categories, such as Personal, Work, or Promotions. - Sentiment analysis -
-Analyze text from social media or other sources and identify whether it relates
-positively or negatively to an offering or service.
+Classifier:
+
+\- Twitter, SMS, and other text messages
+
+\- Classify tweets into a set of classes, such as events, news, or opinions.
+
+\- Analyze text messages into categories, such as Personal, Work, or Promotions.
+
+\- Analyze text from social media or other sources and identify whether it
+relates positively or negatively to an offering or service (use along with Tone
+Analyser)
+
+ 
 
 ##### You input
 
-Text to a pre-trained model
+Texts  to train the model
+
+-   input via API calls (use POST to classifiers endpoint  POST /classifiers/)
+
+-   uploaded as .csv file to the Beta toolkit
+
+-   input directly into the Beta toolkit
 
 ##### Service output
 
-Classes ordered by confidence
+Classes ordered by confidence in JSON format for example here we have texts
+classified by two possible classes - temperature or conditions
+
+ 
+
+{ "classifier_id": "004a12x110-nlc-3450",
+
+"url":
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/004a12x110-nlc-3450",
+"text": "how warm is it",
+
+"top_class": "temperature",
+
+"classes": [
+
+{
+
+"class_name": "temperature",
+
+"confidence": 0.9932755981713393
+
+},
+
+{ "class_name": "conditions",
+
+"confidence": 0.0067244018286606744
+
+}
+
+]
+
+}
+
+ 
+
+Your app would tend to use the “top_class” returned in the JSON to perform some
+next action
+
+ 
+
+Note - the service will attempt to classify text it has not previously
+encountered such as “Should I wear a jumper today” - this text is NOT part of
+the training data
+(https://watson-developer-cloud.github.io/doc-tutorial-downloads/natural-language-classifier/weather_data_train.csv)
+yet it is correctly classified as being temperature related with a confidence
+level of 79% despite not not mentioning anything obviously related to
+temperature
+
+ 
+
+**{ "classifier_id": "004a12x110-nlc-3450", "url":
+"https://gateway.watsonplatform.net/natural-**language-classifier/api/v1/classifiers/004a12x110-nlc-3450",
+"text": "should I wear a jumper today", "top_class": "temperature", "classes": [
+{ "class_name": "temperature", "confidence": 0.7855886480455422 }, {
+"class_name": "conditions", "confidence": 0.21441135195445774 } ] }
+
+ 
 
 ##### How to use the service
 
@@ -1153,28 +1483,48 @@ The process of creating and using the classifier:
 
 ![Natural Language Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/images/classifier_process.png)
 
-##### CSV training data file format
+ 
+
+##### **CSV training data file format**
 
 Make sure that your CSV training data adheres to the following format
-requirements: - The data must be UTF-8 encoded. - Separate text values and each
-class value by a comma delimiter. Each record (row) is terminated by an
-end-of-line character, which is a special character or sequence of characters
-that indicate the end of a line. - Each record must have one text value and at
-least one class value. - Class values cannot include tabs or end-of-line
-characters. - Text values cannot contain tabs or new lines without special
-handling. To preserve tabs or new lines, escape a tab with \t, and escape new
-lines with \r, \n or \r\n. - For example, Example text\twith a tab is valid, but
-Example text with a tab is not valid. - Always enclose text or class values with
-double quotation marks in the training data when it includes the following
-characters: - Commas ("Example text, with comma"). - Double quotation marks. In
-addition, quotation marks must be escaped with double quotation marks ("Example
-text with ""quotation""").
+requirements:
 
-##### Size limitations
+\- T**he data must be UTF-8 encoded.**
 
-There are size limitations to the training data: - The training data must have
-at least five records (rows) and no more than 15,000 records. - The maximum
-total length of a text value is 1024 characters.
+\- **Separate text values and each class value by a comma delimiter.** Each
+record (row) is terminated by an end-of-line character, which is a special
+character or sequence of characters that indicate the end of a line.
+
+\- **Each record must have one text value and at least one class value**.
+
+\- **Class values cannot include tabs or end-of-line characters**.
+
+\- T**ext values cannot contain tabs or new lines without special handling**. To
+preserve tabs or new lines, escape a tab with \t, and escape new lines with \r,
+\n or \r\n.  For example, Example text\t with a tab is valid, but Example text
+with a tab is not valid.
+
+\- **Always enclose text or class values with double quotation marks in the
+training data when it includes the following characters: **
+
+Commas ("Example text, with comma"),
+
+Double quotation marks. In addition, quotation marks must be escaped with double
+quotation marks ("Example text with ""quotation""").
+
+ 
+
+##### **Size limitations**
+
+There are size limitations to the training data:
+
+\- The training data must have at least **five records **(rows) and no more than
+**15,000 records**.
+
+\- The maximum total length of a text value is **1024 characters.**
+
+ 
 
 ##### Supported languages
 
@@ -1185,25 +1535,183 @@ classify. Specify the language when you create the classifier.
 
 ##### Guidelines for good training
 
-The following guidelines are not enforced by the API. However, the classifier
-tends to perform better when the training data adheres to them: - Limit the
-length of input text to fewer than 60 words. - Limit the number of classes to
-several hundred classes. Support for larger numbers of classes might be included
-in later versions of the service. - When each text record has only one class,
-make sure that each class is matched with at least 5 - 10 records to provide
-enough training on that class. - It can be difficult to decide whether to
-include multiple classes for a text. Two common reasons drive multiple classes:
-- When the text is vague, identifying a single class is not always clear. - When
-experts interpret the text in different ways, multiple classes support those
-interpretations. - However, if many texts in your training data include multiple
-classes, or if some texts have more than three classes, you might need to refine
-the classes. For example, review whether the classes are hierarchical. If they
-are hierarchical, include the leaf node as the class.
+The following guidelines are **not enforced by the API**. However, the
+classifier tends to perform better when the training data adheres to them: -
+
+\- **Limit the length of input text to fewer than 60 words**.
+
+\- **Limit the number of classes to several hundred classes.** Support for
+larger numbers of classes might be included in later versions of the service.
+
+\- When each text record has only one class, **make sure that each class is
+matched with at least 5 - 10 records **to provide enough training on that class.
+
+ 
+
+It can be difficult to decide whether to include multiple classes for a text.
+Two common reasons drive multiple classes:
+
+\- When the text is vague, identifying a single class is not always clear.
+
+\- When experts interpret the text in different ways, multiple classes support
+those interpretations.
+
+However, if many texts in your training data include multiple classes, or if
+some texts have more than three classes, you might need to refine the classes.
+For example, review whether the classes are hierarchical. If they are
+hierarchical, include the leaf node as the class e.g. News/Reviews
+
+ 
+
+Note - as at 21/4/17 the service provides a Beta version of a toolkit online -
+presumably this  offers the ability to load and train the classifier via the web
+UI rather than via API calls meaning domain experts can train the classifiers
+themselves - the web UI does not work well to add classes and texts - it works
+better to load from a .csv file
+
+ 
+
+**API Calls**
+
+1.  Create the service instance and get your credentials
+
+2.  Load your csv file to the service using username and password obtained at 1
+
+curl -u "0dcfc43f-8ede-490b-b9f8-b8a9313d717d":"YqjQE4WoLosC" -F
+training_data=\@"C:\\Users\\John\\Desktop\\IBM Watson Application Developer
+Certification\\weather_data_train.csv" -F
+training_metadata="{\\"language\\":\\"en\\",\\"name\\":\\"My Classifier\\"}"
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers"
+
+ 
+
+Expect a response like indicating the classifier is training
+
+{
+
+"classifier_id" : "90e7acx197-nlc-45886",
+
+"name" : "My Classifier",
+
+"language" : "en",
+
+"created" : "2017-04-21T14:37:50.133Z",
+
+"url" :
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/90e7acx197-nlc-45886",
+
+"status" : "Training",
+
+"status_description" : "The classifier instance is in its training phase, not
+yet ready to accept classify requests"
+
+}
+
+ 
+
+3. Periodically check status of the new classifier with GET call to
+**classifiers** endpoint until it is ready (use the classifier ID returned above
+not the name)
+
+ 
+
+curl -u "0dcfc43f-8ede-490b-b9f8-b8a9313d717d":"YqjQE4WoLosC"
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/90e7acx197-nlc-45886"
+
+ 
+
+{
+
+"classifier_id" : "90e7acx197-nlc-45886",
+
+"name" : "My Classifier",
+
+"language" : "en",
+
+"created" : "2017-04-21T14:37:50.133Z",
+
+"url" :
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/90e7acx197-nlc-45886",
+
+"status" : "Available",
+
+"status_description" : "The classifier instance is now available and is ready to
+take classifier requests."
+
+}
+
+ 
+
+4. Once the classifier is ready you can send it text for classification using
+GET or PUT call to the **classify **endpoint (note unless state otherwise GET is
+assumed)
+
+ 
+
+With GET text is passed in the URL as text parameter
+
+curl -u "0dcfc43f-8ede-490b-b9f8-b8a9313d717d":"YqjQE4WoLosC"
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/90e7acx197-nlc-45886/classify?text=How%20hot%20will%20it%20be%20today%3F"
+
+ 
+
+With POST you don’t need to replace blanks with %20 in text and you an present
+as JSON
+
+curl -X POST -u "0dcfc43f-8ede-490b-b9f8-b8a9313d717d":"YqjQE4WoLosC" -H
+"Content-Type:application/json" -d "{\\"text\\":\\"How hot will it be
+today?\\"}"
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/90e7acx197-nlc-45886/classify"
+
+ 
+
+{
+
+"classifier_id" : "90e7acx197-nlc-45886",
+
+"url" :
+"https://gateway.watsonplatform.net/natural-language-classifier/api/v1/classifiers/90e7acx197-nlc-45886",
+
+"text" : "How hot will it be today?",
+
+"top_class" : "temperature",
+
+"classes" : [ {
+
+"class_name" : "temperature",
+
+"confidence" : 0.9928373750021761
+
+}, {
+
+"class_name" : "conditions",
+
+"confidence" : 0.007162624997823877
+
+} ]
+
+}
+
+ 
+
+Note - by default IBM collects data from all calls to the service. To opt out
+specify **X-Watson-Learning-Opt-Out**with the value **true**
+
+ 
 
 [More detailed documentation for Natural Language
 Classifier](https://www.ibm.com/watson/developercloud/doc/natural-language-classifier/index.html)
 
-### [AlchemyLanguage](https://www.ibm.com/watson/developercloud/doc/alchemylanguage/)
+ 
+
+### **AlchemyLanguage**
+
+### <https://www.ibm.com/watson/developercloud/doc/alchemylanguage/>
+
+This service is deprecated. It is no longer possible to create a new instance
+from April 2017. Unfortunately it will still feature heavily in the test.
+
+ 
 
 AlchemyLanguage is a collection of APIs that offer text analysis through natural
 language processing. The AlchemyLanguage APIs can analyze text and help you to
@@ -1212,12 +1720,36 @@ understand its sentiment, keywords, entities, high-level concepts and more.
 ##### Intended Use
 
 Use one or all of the natural language processing APIs available through
-AlchemyLanguage to add high-level semantic information. Browse the documentation
-to learn more about each of AlchemyAPI's text analysis service functions: -
-Entity Extraction - Sentiment Analysis - Emotion Analysis - Keyword Extraction -
-Concept Tagging - Relation Extraction - Taxonomy Classification - Author
-Extraction - Language Detection - Text Extraction - Microformats Parsing - Feed
-Detection - Linked Data Support
+AlchemyLanguage to add high-level semantic information.
+
+Browse the documentation to learn more about each of AlchemyAPI's text analysis
+service functions:
+
+\- Entity Extraction
+
+\- Sentiment Analysis
+
+\- Emotion Analysis
+
+\- Keyword Extraction
+
+\- Concept Tagging
+
+\- Relation Extraction
+
+\- Taxonomy Classification
+
+\- Author Extraction
+
+\- Language Detection
+
+\- Text Extraction
+
+\- Microformats Parsing
+
+\- Feed Detection
+
+\- Linked Data Support
 
 ##### You input
 
@@ -1230,6 +1762,8 @@ relations, authors, and more, returned in XML, JSON, and RDF formats
 
 More detailed documention for
 [AlchemyLanguage](https://www.ibm.com/watson/developercloud/doc/alchemylanguage/)
+
+ 
 
 ### [AlchemyData News](https://www.ibm.com/watson/developercloud/doc/alchemydata-news/)
 
